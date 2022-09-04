@@ -6,7 +6,7 @@ public class Plane extends Vehicle {
     private String airline;
     private int passenger_capacity;
 
-    public Plane(String fuel_type, String model, BigDecimal price, String type, String airline, int passenger_capacity) {
+    public Plane(String fuel_type, String model, BigDecimal price, String airline, int passenger_capacity) {
         super(fuel_type, model, price, "PLANE");
         this.airline = airline;
         this.passenger_capacity = passenger_capacity;

@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Truck extends Vehicle {
     private double load_capacity;
 
-    public Truck(String fuel_type, String model, BigDecimal price, String type, double load_capacity) {
+    public Truck(String fuel_type, String model, BigDecimal price, double load_capacity) {
         super(fuel_type, model, price, "TRUCK");
         this.load_capacity = load_capacity;
     }
