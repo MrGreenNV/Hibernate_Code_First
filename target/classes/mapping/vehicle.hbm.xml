@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="entities.Vehicle" abstract="true" table="vehicles">
+        <id name="id" column="id" type="long">
+            <generator class="identity"/>
+        </id>
+        <property name="fuel_type" type="java.lang.String"/>
+        <property name="model" type="java.lang.String"/>
+        <property name="price" type="java.math.BigDecimal"/>
+        <property name="type" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

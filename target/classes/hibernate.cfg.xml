@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/vehicles_db?createDatabaseIfNotExist=true</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Qwerty_1</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- DB schema will be updated if needed -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!-- List of XML mapping files -->
+        <mapping resource="mapping/vehicle.hbm.xml"/>
+        <mapping resource="mapping/bike.hbm.xml"/>
+        <mapping resource="mapping/plane.hbm.xml"/>
+        <mapping resource="mapping/car.hbm.xml"/>
+        <mapping resource="mapping/truck.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
