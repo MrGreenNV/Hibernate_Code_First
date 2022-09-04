@@ -16,5 +16,7 @@
         <!-- List of XML mapping files -->
         <mapping resource="mapping/vehicle.hbm.xml"/>
         <mapping resource="mapping/bike.hbm.xml"/>
+        <mapping resource="mapping/plane.hbm.xml"/>
+        <mapping resource="mapping/car.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
