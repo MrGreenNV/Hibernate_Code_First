@@ -8,5 +8,9 @@
         <id name="id" column="id" type="long">
             <generator class="identity"/>
         </id>
+        <property name="fuel_type" type="java.lang.String"/>
+        <property name="model" type="java.lang.String"/>
+        <property name="price" type="java.math.BigDecimal"/>
+        <property name="type" type="java.lang.String"/>
     </class>
 </hibernate-mapping>
