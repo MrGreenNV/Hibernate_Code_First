@@ -4,9 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="entities.Vehicle" abstract="true" table="vehicles">
-        <id name="id" column="id" type="long">
-            <generator class="identity"/>
-        </id>
-    </class>
+    <joined-subclass name="entities.Bike" extends="entities.Vehicle" table="bikes">
+        <key column="id" not-null="true"/>
+    </joined-subclass>
 </hibernate-mapping>
